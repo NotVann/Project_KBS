@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksi Satwa</title>
+    <link rel="stylesheet" href="satwa.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">Kebun Binatang</div>
+            <ul class="nav-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="satwa.html">Satwa</a></li>
+        <li><a href="index.html">Berita</a></li>
+        <li><a href="GPS.html">Kunjungi</a></li>
+        <li><a href="event.html">Event</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Koleksi Satwa</h1>
+            <p class="page-subtitle">Jelajahi lebih dari 300 spesies hewan unik dari berbagai belahan dunia</p>
+        </div>
+    </section>
+
+    <!-- Search & Filter -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Cari nama hewan..." id="searchInput">
+                    <button class="search-btn" onclick="searchAnimals()">🔍 Cari</button>
+                </div>
+                <div class="category-filters">
+                    <button class="category-btn active" onclick="filterCategory('all')">Semua</button>
+                    <button class="category-btn" onclick="filterCategory('mamalia')">🦁 Mamalia</button>
+                    <button class="category-btn" onclick="filterCategory('burung')">🦅 Burung</button>
+                    <button class="category-btn" onclick="filterCategory('reptil')">🐍 Reptil</button>
+                    <button class="category-btn" onclick="filterCategory('ikan')">🐠 Ikan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animals Section -->
+    <section class="animals-section">
+        <div class="container">
+            <div class="animals-grid" id="animalsGrid">
+                <!-- Mamalia -->
+                <div class="animal-card" data-category="mamalia">
+                    <div class="animal-image" style="background-image: url('kewan-mamalia/harimau-sumatra.jpg');">
+                        <div class="animal-category">Mamalia</div>
+                    </div>
+                    <div class="animal-content">
+                        <h3 class="animal-name">Harimau Sumatra</h3>
+                        <p class="animal-latin">Panthera tigris sumatrae</p>
+                        <p class="animal-description">Subspesies harimau terkecil yang hanya ditemukan di Pulau Sumatra. Memiliki belang yang lebih rapat dan tubuh lebih ramping, cocok untuk habitat hutan tropis lebat. Statusnya sangat terancam punah akibat perburuan dan kehilangan habitat.</p>
+                        <div class="animal-facts">
+                            <span class="fact-item">📏 2.2-2.5m</span>
+                            <span class="fact-item">⚖️ 90-140kg</span>
+                            <span class="fact-item">🕒15-20 tahun</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animal-card" data-category="mamalia">
+                    <div class="animal-image" style="background-image: url('kewan-mamalia/serval.jpg');">
+                        <div class="animal-category">Mamalia</div>
+                    </div>
+                    <div class="animal-content">
+                        <h3 class="animal-name">Serval</h3>
+                        <p class="animal-latin">Leptailurus serval</p>
+                        <p class="animal-description">Kucing liar berukuran sedang dari Afrika dan Asia Barat. Ciri khasnya adalah jumbai hitam di telinga dan refleks luar biasa saat berburu. Caracal mampu melompat dan menangkap burung di udara, menjadikannya predator cepat dan gesit.</p>
+                        <div class="animal-facts">
+                            <span class="fact-item">📏 60-100cm</span>
+                            <span class="fact-item">⚖️ 8-13kg</span>
+                            <span class="fact-item">🕒10-15 tahun</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animal-card" data-category="mamalia">
+                <div class="animal-image" style="background-image: url('kewan-mamalia/carcal.jpg');">
+                    <div class="animal-category">Mamalia</div>
+                </div>
+                <div class="animal-content">
+                    <h3 class="animal-name">Caracal</h3>
+                    <p class="animal-latin">Caracal caracal</p>
+                    <p class="animal-description">Kucing liar berukuran sedang dari Afrika dan Asia Barat. Ciri khasnya adalah jumbai hitam di telinga dan refleks luar biasa saat berburu. Caracal mampu melompat hingga 3 meter tinggi untuk menangkap burung di udara, menjadikannya predator yang sangat gesit.</p>
+                    <div class="animal-facts">
+                        <span class="fact-item">📏 88-99cm</span>
+                        <span class="fact-item">⚖️ 8-18kg</span>
+                        <span class="fact-item">🕒 12-16 tahun</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beruang Madu -->
+            <div class="animal-card" data-category="mamalia">
+                <div class="animal-image" style="background-image: url('kewan-mamalia/beruang-madu.jpg');">
+                    <div class="animal-category">Mamalia</div>
+                </div>
+                <div class="animal-content">
+                    <h3 class="animal-name">Beruang Madu</h3>
+                    <p class="animal-latin">Helarctos malayanus</p>
+                    <p class="animal-description">Beruang terkecil di dunia yang hidup di hutan tropis Asia Tenggara. Dinamakan beruang madu karena corak kuning-oranye di dadanya yang menyerupai matahari terbit. Merupakan pemanjat pohon yang sangat ahli dan gemar madu.</p>
+                    <div class="animal-facts">
+                        <span class="fact-item">📏 120-150cm</span>
+                        <span class="fact-item">⚖️ 25-65kg</span>
+                        <span class="fact-item">🕒 20-25 tahun</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gajah Sumatera -->
+            <div class="animal-card" data-category="mamalia">
+                <div class="animal-image" style="background-image: url('kewan-mamalia/gajah-sumatra.jpg');">
+                    <div class="animal-category">Mamalia</div>
+                </div>
+                <div class="animal-content">
+                    <h3 class="animal-name">Gajah Sumatera</h3>
+                    <p class="animal-latin">Elephas maximus sumatranus</p>
+                    <p class="animal-description">Subspesies gajah Asia yang endemik di Pulau Sumatera. Memiliki ukuran lebih kecil dari gajah Afrika dengan telinga yang relatif kecil. Status konservasi kritis karena habitat yang terus menyusut dan konflik dengan manusia.</p>
+                    <div class="animal-facts">
+                        <span class="fact-item">📏 500-600cm</span>
+                        <span class="fact-item">⚖️ 2500-4000kg</span>
+                        <span class="fact-item">🕒 60-70 tahun</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anoa -->
+            <div class="animal-card" data-category="mamalia">
+                <div class="animal-image" style="background-image: url('kewan-mamalia/anoa.jpg');">
+                    <div class="animal-category">Mamalia</div>
+                    <div>🐃 Anoa</div>
+                </div>
+                <div class="animal-content">
+                    <h3 class="animal-name">Anoa</h3>
+                    <p class="animal-latin">Bubalus depressicornis</p>
+                    <p class="animal-description">Kerbau kerdil endemik Sulawesi yang merupakan mamalia terbesar di pulau tersebut. Memiliki tanduk lurus dan pendek. Hidup di hutan hujan dataran rendah dan perbukitan. Terancam punah karena perburuan dan kerusakan habitat.</p>
+                    <div class="animal-facts">
+                        <span class="fact-item">📏 150-170cm</span>
+                        <span class="fact-item">⚖️ 150-300kg</span>
+                        <span class="fact-item">🕒 15-20 tahun</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jerapah -->
+            <div class="animal-card" data-category="mamalia">
+                <div class="animal-image" style="background-image: url('kewan-mamalia/jerapah.jpg');">
+                    <div class="animal-category">Mamalia</div>
+                </div>
+                <div class="animal-content">
+                    <h3 class="animal-name">Jerapah</h3>
+                    <p class="animal-latin">Giraffa camelopardalis</p>
+                    <p class="animal-description">Mamalia tertinggi di dunia dengan leher yang dapat mencapai 2 meter. Hidup di savana Afrika dan memakan daun akasia. Memiliki pola bintik yang unik pada setiap individu seperti sidik jari manusia. Jantungnya seberat 11 kg untuk memompa darah ke kepala.</p>
+                    <div class="animal-facts">
+                        <span class="fact-item">📏 400-600cm</span>
+                        <span class="fact-item">⚖️ 800-1200kg</span>
+                        <span class="fact-item">🕒 20-25 tahun</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kambing Gunung -->
+            <div class="animal-card" data-category="mamalia">
+                <div class="animal-image" style="background-image: url('kewan-mamalia/kambing-gunung.jpg');">
+                    <div class="animal-category">Mamalia</div>
+                </div>
+                <div class="animal-content">
+                    <h3 class="animal-name">Kambing Gunung</h3>
+                    <p class="animal-latin">Oreamnos americanus</p>
+                    <p class="animal-description">Mamalia berkuku genap yang hidup di pegunungan tinggi Amerika Utara. Memiliki bulu putih tebal untuk melindungi dari cuaca dingin ekstrem. Kaki mereka dirancang khusus untuk memanjat tebing curam dengan bantalan kaki yang dapat mencengkeram batu.</p>
+                    <div class="animal-facts">
+                        <span class="fact-item">📏 120-180cm</span>
+                        <span class="fact-item">⚖️ 45-140kg</span>
+                        <span class="fact-item">🕒 12-15 tahun</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kuda Nil -->
+            <div class="animal-card" data-category="mamalia">
+                <div class="animal-image" style="background-image: url('kewan-mamalia/kuda-nil.jpg');">
+                    <div class="animal-category">Mamalia</div>
+                </div>
+                <div class="animal-content">
+                    <h3 class="animal-name">Kuda Nil</h3>
+                    <p class="animal-latin">Hippopotamus amphibius</p>
+                    <p class="animal-description">Mamalia semi-akuatik terbesar ketiga di dunia setelah gajah dan badak putih. Menghabiskan sebagian besar waktu di air untuk menjaga suhu tubuh. Meskipun tampak jinak, kuda nil adalah salah satu hewan paling berbahaya di Afrika dengan gigitan yang sangat kuat.</p>
+                    <div class="animal-facts">
+                        <span class="fact-item">📏 300-400cm</span>
+                        <span class="fact-item">⚖️ 1500-3000kg</span>
+                        <span class="fact-item">🕒 40-50 tahun</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Landak Jawa -->
+            <div class="animal-card" data-category="mamalia">
+                <div class="animal-image" style="background-image: url('kewan-mamalia/landak-jawa.jpg');">
+                    <div class="animal-category">Mamalia</div>
+                    <div>🦔 Landak Jawa</div>
+                </div>
+                <div class="animal-content">
+                    <h3 class="animal-name">Landak Jawa</h3>
+                    <p class="animal-latin">Hystrix javanica</p>
+                    <p class="animal-description">Hewan pengerat berukuran besar yang endemik Asia Tenggara. Tubuhnya dilindungi duri-duri tajam yang dapat ditegakkan saat terancam. Aktif di malam hari dan memakan akar, umbi, buah, dan kulit kayu. Dapat hidup hingga 20 tahun di penangkaran.</p>
+                    <div class="animal-facts">
+                        <span class="fact-item">📏 60-90cm</span>
+                        <span class="fact-item">⚖️ 10-18kg</span>
+                        <span class="fact-item">🕒 15-20 tahun</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kapibara -->
+            <div class="animal-card" data-category="mamalia">
+                <div class="animal-image" style="background-image: url('kewan-mamalia/mas-bro.jpg');">
+                    <div class="animal-category">Mamalia</div>
+                </div>
+                <div class="animal-content">
+                    <h3 class="animal-name">Kapibara</h3>
+                    <p class="animal-latin">Hydrochoerus hydrochaeris</p>
+                    <p class="animal-description">Hewan pengerat terbesar di dunia yang berasal dari Amerika Selatan. Hidup di dekat perairan dan merupakan perenang yang sangat baik. Memiliki sifat yang tenang dan sering terlihat bersama dengan berbagai hewan lain. Makanannya adalah tumbuhan air dan rumput.</p>
+                    <div class="animal-facts">
+                        <span class="fact-item">📏 100-130cm</span>
+                        <span class="fact-item">⚖️ 35-66kg</span>
+                        <span class="fact-item">🕒 8-10 tahun</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Owa Jawa -->
+            <div class="animal-card" data-category="mamalia">
+                <div class="animal-image" style="background-image: url('kewan-mamalia/owa-jawa.jpg');">
+                    <div class="animal-category">Mamalia</div>
+                    <div>🐒 Owa Jawa</div>
+                </div>
+                <div class="animal-content">
+                    <h3 class="animal-name">Owa Jawa</h3>
+                    <p class="animal-latin">Hylobates moloch</p>
+                    <p class="animal-description">Primata kecil endemik Jawa Barat yang terancam punah. Dikenal dengan suara panggilan yang keras dan melodi. Hidup di puncak pohon dan jarang turun ke tanah. Memiliki lengan yang panjang untuk berayun dari pohon ke pohon dengan cepat.</p>
+                    <div class="animal-facts">
+                        <span class="fact-item">📏 44-64cm</span>
+                        <span class="fact-item">⚖️ 4-8kg</span>
+                        <span class="fact-item">🕒 25-30 tahun</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rusa Tutul -->
+            <div class="animal-card" data-category="mamalia">
+                <div class="animal-image" style="background-image: url('kewan-mamalia/rusa-tutul.jpg');">
+                    <div class="animal-category">Mamalia</div>
+                </div>
+                <div class="animal-content">
+                    <h3 class="animal-name">Rusa Tutul</h3>
+                    <p class="animal-latin">Axis axis</p>
+                    <p class="animal-description">Rusa berukuran sedang dengan bintik-bintik putih yang khas di seluruh tubuhnya. Berasal dari India dan diintroduksi ke berbagai negara. Jantan memiliki tanduk bercabang yang indah. Hidup berkelompok dan aktif baik siang maupun malam hari.</p>
+                    <div class="animal-facts">
+                        <span class="fact-item">📏 130-180cm</span>
+                        <span class="fact-item">⚖️ 30-85kg</span>
+                        <span class="fact-item">🕒 15-20 tahun</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Singa Putih -->
+            <div class="animal-card" data-category="mamalia">
+                <div class="animal-image" style="background-image: url('kewan-mamalia/singa-putih.webp');">
+                    <div class="animal-category">Mamalia</div>
+                </div>
+                <div class="animal-content">
+                    <h3 class="animal-name">Singa Putih</h3>
+                    <p class="animal-latin">Panthera leo</p>
+                    <p class="animal-description">Variasi warna langka dari singa biasa yang disebabkan oleh kondisi genetik leucism. Berbeda dengan albino, singa putih masih memiliki mata berwarna normal. Sangat jarang ditemukan di alam liar dan sebagian besar hidup di penangkaran untuk konservasi.</p>
+                    <div class="animal-facts">
+                        <span class="fact-item">📏 170-250cm</span>
+                        <span class="fact-item">⚖️ 120-250kg</span>
+                        <span class="fact-item">🕒 10-14 tahun</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unta -->
+            <div class="animal-card" data-category="mamalia">
+                <div class="animal-image" style="background-image: url('kewan-mamalia/unta.jpg');">
+                    <div class="animal-category">Mamalia</div>
+                </div>
+                <div class="animal-content">
+                    <h3 class="animal-name">Unta</h3>
+                    <p class="animal-latin">Camelus dromedarius</p>
+                    <p class="animal-description">Mamalia yang telah beradaptasi sempurna dengan kehidupan di padang pasir. Memiliki satu punuk yang menyimpan lemak sebagai cadangan energi. Dapat bertahan tanpa air hingga seminggu dan mampu minum 100 liter air sekaligus saat menemukan sumber air.</p>
+                    <div class="animal-facts">
+                        <span class="fact-item">📏 230-340cm</span>
+                        <span class="fact-item">⚖️ 300-690kg</span>
+                        <span class="fact-item">🕒 40-50 tahun</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GNU -->
+            <div class="animal-card" data-category="mamalia">
+                <div class="animal-image" style="background-image: url('kewan-mamalia/GNU.jpg');">
+                    <div class="animal-category">Mamalia</div>
+                </div>
+                <div class="animal-content">
+                    <h3 class="animal-name">GNU (Wildebeest)</h3>
+                    <p class="animal-latin">Connochaetes taurinus</p>
+                    <p class="animal-description">Antelope besar yang terkenal dengan migrasi spektakuler di Afrika Timur. Jutaan gnu bermigrasi setiap tahun mengikuti pola hujan untuk mencari rumput segar. Memiliki kepala seperti banteng dengan tanduk melengkung dan tubuh seperti kuda.</p>
+                    <div class="animal-facts">
+                        <span class="fact-item">📏 150-240cm</span>
+                        <span class="fact-item">⚖️ 120-270kg</span>
+                        <span class="fact-item">🕒 15-20 tahun</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mouflon Eropa -->
+            <div class="animal-card" data-category="mamalia">
+                <div class="animal-image" style="background-image: url('kewan-mamalia/mouflon-eropa.jpg');">
+                    <div class="animal-category">Mamalia</div>
+                    <div>🐑 Mouflon</div>
+                </div>
+                <div class="animal-content">
+                    <h3 class="animal-name">Mouflon Eropa</h3>
+                    <p class="animal-latin">Ovis aries musimon</p>
+                    <p class="animal-description">Domba liar yang dianggap sebagai nenek moyang domba domestik. Jantan memiliki tanduk besar melengkung yang dapat tumbuh sepanjang hidup. Hidup di daerah pegunungan dengan medan berbatu. Sangat gesit dalam memanjat tebing curam.</p>
+                    <div class="animal-facts">
+                        <span class="fact-item">📏 110-130cm</span>
+                        <span class="fact-item">⚖️ 25-55kg</span>
+                        <span class="fact-item">🕒 12-18 tahun</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Burung Cendrawasih Raja -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/cendrawasi-raja.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Cendrawasih Raja</h3>
+            <p class="animal-latin">Cicinnurus regius</p>
+            <p class="animal-description">Burung surga yang memiliki bulu berwarna merah cerah dengan hiasan putih pada bagian perut dan ekor yang unik.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 15-16cm</span>
+              <span class="fact-item">⚖️ 50-60g</span>
+              <span class="fact-item">🕒 5-8 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bangau Tong-tong -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/burung-tong-tong.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Bangau Tong-tong</h3>
+            <p class="animal-latin">Leptoptilos javanicus</p>
+            <p class="animal-description">Burung bangau besar yang hidup di rawa-rawa dan sering terlihat mencari makan di tempat sampah.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 110-120cm</span>
+              <span class="fact-item">⚖️ 4-5kg</span>
+              <span class="fact-item">🕒 25-30 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Elang Bondol -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/elang-bondol.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Elang Bondol</h3>
+            <p class="animal-latin">Haliastur indus</p>
+            <p class="animal-description">Burung pemangsa yang sering terlihat di daerah pantai dan sungai, dikenal sebagai pembersih lingkungan.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 44-60cm</span>
+              <span class="fact-item">⚖️ 320-670g</span>
+              <span class="fact-item">🕒 15-20 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Julang Emas -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/julang-emas.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Julang Emas</h3>
+            <p class="animal-latin">Rhyticeros undulatus</p>
+            <p class="animal-description">Burung rangkong dengan paruh besar dan suara yang keras, berperan penting dalam penyebaran biji di hutan.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 90-100cm</span>
+              <span class="fact-item">⚖️ 2-3kg</span>
+              <span class="fact-item">🕒 30-40 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flamingo -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/flamingo.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Flamingo</h3>
+            <p class="animal-latin">Phoenicopterus roseus</p>
+            <p class="animal-description">Burung air dengan warna merah muda mencolok dan leher panjang yang melengkung, hidup berkelompok di perairan dangkal.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 120-145cm</span>
+              <span class="fact-item">⚖️ 2-4kg</span>
+              <span class="fact-item">🕒 20-30 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gagak Hutan -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/gagak-hitam.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Gagak Hutan</h3>
+            <p class="animal-latin">Corvus enca</p>
+            <p class="animal-description">Burung cerdas berwarna hitam yang hidup berkelompok dan memiliki kemampuan komunikasi yang kompleks.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 40-45cm</span>
+              <span class="fact-item">⚖️ 280-400g</span>
+              <span class="fact-item">🕒 10-15 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kasuari Gelambir Dua -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/kasuari-gelambir-dua.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Kasuari Gelambir Dua</h3>
+            <p class="animal-latin">Casuarius casuarius</p>
+            <p class="animal-description">Burung tidak dapat terbang yang besar dan berbahaya, memiliki casque keras di kepala dan dua gelambir merah.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 150-190cm</span>
+              <span class="fact-item">⚖️ 35-60kg</span>
+              <span class="fact-item">🕒 40-50 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Merak Hijau -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/merak-hijau.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Merak Hijau</h3>
+            <p class="animal-latin">Pavo muticus</p>
+            <p class="animal-description">Burung nasional Indonesia yang memiliki bulu ekor yang indah dan dapat dikembangkan seperti kipas.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 100-300cm</span>
+              <span class="fact-item">⚖️ 3.8-5kg</span>
+              <span class="fact-item">🕒 10-15 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ibis Putih Kepala Hitam -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/iblis-putih-kepala-hitam.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Ibis Putih Kepala Hitam</h3>
+            <p class="animal-latin">Threskiornis melanocephalus</p>
+            <p class="animal-description">Burung air dengan tubuh putih dan kepala hitam yang khas, hidup di daerah rawa dan lahan basah.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 65-76cm</span>
+              <span class="fact-item">⚖️ 1.5-2kg</span>
+              <span class="fact-item">🕒 15-20 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kakatua Maluku -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/kakatua-maluku.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Kakatua Maluku</h3>
+            <p class="animal-latin">Cacatua moluccensis</p>
+            <p class="animal-description">Burung kakatua dengan bulu berwarna merah muda salmon dan jambul yang dapat ditegakkan saat bersemangat.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 50-52cm</span>
+              <span class="fact-item">⚖️ 850-900g</span>
+              <span class="fact-item">🕒 60-80 tahun</span>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- Maleo -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/maleo.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Maleo</h3>
+            <p class="animal-latin">Macrocephalon maleo</p>
+            <p class="animal-description">Burung endemik Sulawesi yang unik karena mengubur telurnya di pasir panas atau tanah vulkanis untuk penetasan.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 55-60cm</span>
+              <span class="fact-item">⚖️ 1.5-2kg</span>
+              <span class="fact-item">🕒 15-20 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Burung Unta -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/burung-unta.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Burung Unta</h3>
+            <p class="animal-latin">Struthio camelus</p>
+            <p class="animal-description">Burung terbesar di dunia yang tidak dapat terbang, memiliki kaki yang kuat untuk berlari dengan kecepatan tinggi.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 175-190cm</span>
+              <span class="fact-item">⚖️ 90-130kg</span>
+              <span class="fact-item">🕒 40-50 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pelikan -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/pelikan.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Pelikan</h3>
+            <p class="animal-latin">Pelecanus conspicillatus</p>
+            <p class="animal-description">Burung air besar dengan kantong di bawah paruh yang digunakan untuk menangkap ikan.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 150-180cm</span>
+              <span class="fact-item">⚖️ 4-7kg</span>
+              <span class="fact-item">🕒 25-30 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kuntul Putih Besar -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/kuntul-putih-besar.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Kuntul Putih Besar</h3>
+            <p class="animal-latin">Ardea alba</p>
+            <p class="animal-description">Burung bangau putih besar yang anggun, sering terlihat mencari makan di perairan dangkal.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 85-102cm</span>
+              <span class="fact-item">⚖️ 1-1.5kg</span>
+              <span class="fact-item">🕒 15-20 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Julang Sulawesi -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/julang-sulawesi.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Julang Sulawesi</h3>
+            <p class="animal-latin">Rhabdotorrhinus exarhatus</p>
+            <p class="animal-description">Burung rangkong endemik Sulawesi dengan paruh melengkung dan casque yang menonjol.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 65-70cm</span>
+              <span class="fact-item">⚖️ 2-2.5kg</span>
+              <span class="fact-item">🕒 25-30 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poksai Sumatra -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/posakai-sumatra.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Poksai Sumatra</h3>
+            <p class="animal-latin">Garrulax bicolor</p>
+            <p class="animal-description">Burung pengicau endemik Sumatra dengan suara merdu yang hidup berkelompok di hutan pegunungan.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 25-28cm</span>
+              <span class="fact-item">⚖️ 100-120g</span>
+              <span class="fact-item">🕒 8-12 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jalak Suren -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/jalak-suren.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Jalak Suren</h3>
+            <p class="animal-latin">Gracupica contra</p>
+            <p class="animal-description">Burung jalak dengan kemampuan meniru suara yang baik, sering dipelihara sebagai burung kicau.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 23-25cm</span>
+              <span class="fact-item">⚖️ 80-100g</span>
+              <span class="fact-item">🕒 10-15 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nuri Sayap Hitam -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/nuri-sayap-hitam.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Nuri Sayap Hitam</h3>
+            <p class="animal-latin">Eos cyanogenia</p>
+            <p class="animal-description">Burung nuri dengan warna merah cerah dan sayap hitam yang kontras, endemik Maluku.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 30-32cm</span>
+              <span class="fact-item">⚖️ 200-250g</span>
+              <span class="fact-item">🕒 20-25 tahun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ibis Rokoroko -->
+        <div class="animal-card" data-category="burung">
+          <div class="animal-image" style="background-image: url('burung/iblis-rokoroko.jpg');">
+            <div class="animal-category">Burung</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Ibis Rokoroko</h3>
+            <p class="animal-latin">Plegadis falcinellus</p>
+            <p class="animal-description">Burung ibis dengan bulu berwarna coklat keunguan dan paruh melengkung panjang untuk mencari makan di lumpur.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 55-65cm</span>
+              <span class="fact-item">⚖️ 500-800g</span>
+              <span class="fact-item">🕒 15-20 tahun</span>
+            </div>
+          </div>
+        </div>
+
+                <!-- Iguana Merah -->
+        <div class="animal-card" data-category="reptil">
+          <div class="animal-image" style="background-image: url('Reptil/red-iguana.jpg');">
+            <div class="animal-category">Reptil</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Iguana Merah</h3>
+            <p class="animal-latin">Iguana iguana</p>
+            <p class="animal-description">Kadal besar dengan warna merah mencolok yang hidup di pohon dan aktif pada siang hari.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 120-180cm</span>
+              <span class="fact-item">⚖️ 4-8kg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Iguana Hijau -->
+        <div class="animal-card" data-category="reptil">
+          <div class="animal-image" style="background-image: url('Reptil/ijo-iguana.jpg');">
+            <div class="animal-category">Reptil</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Iguana Hijau</h3>
+            <p class="animal-latin">Iguana iguana</p>
+            <p class="animal-description">Reptil herbivora besar dengan kulit hijau yang dapat berubah warna untuk termoregulasi.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 120-200cm</span>
+              <span class="fact-item">⚖️ 4-8kg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Komodo -->
+        <div class="animal-card" data-category="reptil">
+          <div class="animal-image" style="background-image: url('Reptil/komodo.jpg');">
+            <div class="animal-category">Reptil</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Komodo</h3>
+            <p class="animal-latin">Varanus komodoensis</p>
+            <p class="animal-description">Kadal terbesar di dunia yang hanya ditemukan di Indonesia. Predator puncak dengan gigitan berbisa.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 2-3m</span>
+              <span class="fact-item">⚖️ 70kg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soa-soa Layar -->
+        <div class="animal-card" data-category="reptil">
+          <div class="animal-image" style="background-image: url('Reptil/soa-soa-layar.jpg');">
+            <div class="animal-category">Reptil</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Soa-soa Layar</h3>
+            <p class="animal-latin">Hydrosaurus amboinensis</p>
+            <p class="animal-description">Kadal air dengan jambul seperti layar di punggungnya, dapat berlari di atas permukaan air.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 80-100cm</span>
+              <span class="fact-item">⚖️ 1-2kg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sanca Bodo Albino -->
+        <div class="animal-card" data-category="reptil">
+          <div class="animal-image" style="background-image: url('Reptil/sanca-albino.jpg');">
+            <div class="animal-category">Reptil</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Sanca Bodo Albino</h3>
+            <p class="animal-latin">Python reticulatus</p>
+            <p class="animal-description">Variasi albino dari ular sanca terpanjang di dunia dengan warna putih kekuningan yang mencolok.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 6-10m</span>
+              <span class="fact-item">⚖️ 25-75kg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sanca Bodo -->
+        <div class="animal-card" data-category="reptil">
+          <div class="animal-image" style="background-image: url('Reptil/sanca\ bodo.jpg');">
+            <div class="animal-category">Reptil</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Sanca Bodo</h3>
+            <p class="animal-latin">Python reticulatus</p>
+            <p class="animal-description">Ular terpanjang di dunia dengan pola belah ketupat yang indah, predator yang membelit mangsa.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 6-10m</span>
+              <span class="fact-item">⚖️ 25-75kg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ular Sendok Jawa -->
+        <div class="animal-card" data-category="reptil">
+          <div class="animal-image" style="background-image: url('Reptil/sendok-jawa.jpg');">
+            <div class="animal-category">Reptil</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Ular Sendok Jawa</h3>
+            <p class="animal-latin">Naja sputatrix</p>
+            <p class="animal-description">Ular berbisa dengan kemampuan menyemburkan racun dan dapat mengembangkan leher seperti sendok.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 120-150cm</span>
+              <span class="fact-item">⚖️ 1-2kg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- King Kobra -->
+        <div class="animal-card" data-category="reptil">
+          <div class="animal-image" style="background-image: url('Reptil/king-kobra.jpg');">
+            <div class="animal-category">Reptil</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">King Kobra</h3>
+            <p class="animal-latin">Ophiophagus hannah</p>
+            <p class="animal-description">Ular berbisa terpanjang di dunia yang memangsa ular lain, memiliki bisa yang sangat mematikan.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 3-5m</span>
+              <span class="fact-item">⚖️ 6-12kg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kura-kura Red Foot -->
+        <div class="animal-card" data-category="reptil">
+          <div class="animal-image" style="background-image: url('Reptil/kura-red-foot.jpg');">
+            <div class="animal-category">Reptil</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Kura-kura Red Foot</h3>
+            <p class="animal-latin">Chelonoidis carbonarius</p>
+            <p class="animal-description">Kura-kura darat dengan kaki berwarna merah cerah yang hidup di hutan tropis Amerika Selatan.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 25-35cm</span>
+              <span class="fact-item">⚖️ 3-8kg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Penyu Hijau -->
+        <div class="animal-card" data-category="reptil">
+          <div class="animal-image" style="background-image: url('Reptil/penyu-hijau.jpg');">
+            <div class="animal-category">Reptil</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Penyu Hijau</h3>
+            <p class="animal-latin">Chelonia mydas</p>
+            <p class="animal-description">Penyu laut herbivora yang bermigrasi ribuan kilometer untuk bertelur di pantai kelahirannya.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 80-120cm</span>
+              <span class="fact-item">⚖️ 65-130kg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kura-kura Batok -->
+        <div class="animal-card" data-category="reptil">
+          <div class="animal-image" style="background-image: url('Reptil/batok.jpg');">
+            <div class="animal-category">Reptil</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Kura-kura Batok</h3>
+            <p class="animal-latin">Cuora amboinensis</p>
+            <p class="animal-description">Kura-kura air tawar endemik Asia Tenggara dengan tempurung yang dapat menutup rapat seperti kotak.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 15-20cm</span>
+              <span class="fact-item">⚖️ 0.5-1kg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kura-kura Telinga Merah -->
+        <div class="animal-card" data-category="reptil">
+          <div class="animal-image" style="background-image: url('Reptil/telinga-merah.jpg');">
+            <div class="animal-category">Reptil</div>
+          </div>
+          <div class="animal-content">
+            <h3 class="animal-name">Kura-kura Telinga Merah</h3>
+            <p class="animal-latin">Trachemys scripta elegans</p>
+            <p class="animal-description">Kura-kura air tawar dengan garis merah di kedua sisi kepala yang sering dipelihara sebagai hewan peliharaan.</p>
+            <div class="animal-facts">
+              <span class="fact-item">📏 15-28cm</span>
+              <span class="fact-item">⚖️ 0.5-3kg</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="animal-card" data-category="ikan">
+        <div class="animal-image" style="background-image: url('ikan/gurami\ sabah.jpg');">
+            <div class="animal-category">AIR TAWAR</div>
+        </div>
+        <div class="animal-content">
+            <h3 class="animal-name">Gurami Sabah</h3>
+            <p class="animal-latin">Osphronemus goramy</p>
+            <p class="animal-description">Ikan air tawar asli Asia Tenggara yang hidup di sungai dan danau. Memiliki kemampuan bernapas udara menggunakan organ labirin.</p>
+            <div class="animal-facts">
+                <span class="fact-item">📏 30-60cm</span>
+                <span class="fact-item">⚖️ 2-8kg</span>
+                <span class="fact-item">🏠 Sungai, Danau</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ikan Belida -->
+    <div class="animal-card" data-category="ikan">
+        <div class="animal-image" style="background-image: url('ikan/belida.jpg');">
+            <div class="animal-category">AIR TAWAR</div>
+        </div>
+        <div class="animal-content">
+            <h3 class="animal-name">Ikan Belida</h3>
+            <p class="animal-latin">Chitala ornata</p>
+            <p class="animal-description">Ikan air tawar yang hidup di sungai-sungai besar Asia Tenggara. Dikenal sebagai ikan pisau karena bentuk tubuhnya yang pipih dan memanjang.</p>
+            <div class="animal-facts">
+                <span class="fact-item">📏 40-100cm</span>
+                <span class="fact-item">⚖️ 2-5kg</span>
+                <span class="fact-item">🏠 Sungai Besar</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nila Merah -->
+    <div class="animal-card" data-category="ikan">
+        <div class="animal-image" style="background-image: url('ikan/nila\ merah.jpg');">
+            <div class="animal-category">AIR TAWAR</div>
+        </div>
+        <div class="animal-content">
+            <h3 class="animal-name">Nila Merah</h3>
+            <p class="animal-latin">Oreochromis niloticus</p>
+            <p class="animal-description">Ikan air tawar yang mudah beradaptasi dan dapat hidup di berbagai kondisi air. Sangat populer untuk budidaya karena pertumbuhannya yang cepat.</p>
+            <div class="animal-facts">
+                <span class="fact-item">📏 20-35cm</span>
+                <span class="fact-item">⚖️ 500-2000g</span>
+                <span class="fact-item">🏠 Danau, Kolam</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Peacock Bass Monoculus -->
+    <div class="animal-card" data-category="ikan">
+        <div class="animal-image" style="background-image: url('ikan/peacock\ bass\ monoculus.jpg');">
+            <div class="animal-category">AIR TAWAR</div>
+        </div>
+        <div class="animal-content">
+            <h3 class="animal-name">Peacock Bass Monoculus</h3>
+            <p class="animal-latin">Cichla monoculus</p>
+            <p class="animal-description">Ikan predator air tawar dari Amazon yang memiliki warna cerah seperti bulu merak. Sangat agresif dan teritorial saat musim kawin.</p>
+            <div class="animal-facts">
+                <span class="fact-item">📏 40-60cm</span>
+                <span class="fact-item">⚖️ 3-8kg</span>
+                <span class="fact-item">🏠 Sungai Amazon</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alligator Gar -->
+    <div class="animal-card" data-category="ikan">
+        <div class="animal-image" style="background-image: url('ikan/aligator\ gar.jpg');">
+            <div class="animal-category">AIR TAWAR</div>
+        </div>
+        <div class="animal-content">
+            <h3 class="animal-name">Alligator Gar</h3>
+            <p class="animal-latin">Atractosteus spatula</p>
+            <p class="animal-description">Ikan air tawar purba dari Amerika Utara dengan moncong panjang seperti buaya. Dapat hidup hingga 100 tahun dan merupakan salah satu ikan air tawar terbesar.</p>
+            <div class="animal-facts">
+                <span class="fact-item">📏 200-300cm</span>
+                <span class="fact-item">⚖️ 45-140kg</span>
+                <span class="fact-item">🏠 Sungai, Danau</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ikan Kaos Kaki -->
+    <div class="animal-card" data-category="ikan">
+        <div class="animal-image" style="background-image: url('ikan/kaos\ sikel.jpg');">
+            <div class="animal-category">AIR TAWAR</div>
+        </div>
+        <div class="animal-content">
+            <h3 class="animal-name">Ikan Kaos Kaki</h3>
+            <p class="animal-latin">Botia macracantha</p>
+            <p class="animal-description">Ikan air tawar dari Indonesia dengan corak belang hitam-oranye seperti kaos kaki. Hidup berkelompok dan aktif membersihkan dasar akuarium.</p>
+            <div class="animal-facts">
+                <span class="fact-item">📏 15-30cm</span>
+                <span class="fact-item">⚖️ 200-500g</span>
+                <span class="fact-item">🏠 Sungai Kalimantan</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Red-head Synspilum -->
+    <div class="animal-card" data-category="ikan">
+        <div class="animal-image" style="background-image: url('ikan/red-head\ synspilium.jpg');">
+            <div class="animal-category">AIR TAWAR</div>
+        </div>
+        <div class="animal-content">
+            <h3 class="animal-name">Red-head Synspilum</h3>
+            <p class="animal-latin">Vieja synspila</p>
+            <p class="animal-description">Ikan cichlid air tawar dari Amerika Tengah dengan kepala berwarna merah cerah. Sangat protektif terhadap anak-anaknya dan teritorial.</p>
+            <div class="animal-facts">
+                <span class="fact-item">📏 25-35cm</span>
+                <span class="fact-item">⚖️ 800-1500g</span>
+                <span class="fact-item">🏠 Sungai Guatemala</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ikan Genghis Khan -->
+    <div class="animal-card" data-category="ikan">
+        <div class="animal-image" style="background-image: url('ikan/ikan\ genghis\ khan.jpg');">
+            <div class="animal-category">AIR TAWAR</div>
+        </div>
+        <div class="animal-content">
+            <h3 class="animal-name">Ikan Genghis Khan</h3>
+            <p class="animal-latin">Hemibagrus wyckioides</p>
+            <p class="animal-description">Ikan lele raksasa air tawar dari Asia Tenggara yang sangat agresif. Predator nokturnal yang dapat memangsa ikan lain sebesar setengah ukuran tubuhnya.</p>
+            <div class="animal-facts">
+                <span class="fact-item">📏 60-150cm</span>
+                <span class="fact-item">⚖️ 10-30kg</span>
+                <span class="fact-item">🏠 Sungai Mekong</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hiu Karang Sirip Hitam -->
+    <div class="animal-card" data-category="ikan">
+        <div class="animal-image" style="background-image: url('ikan/hiu\ karang\ sirip\ hitam.jpg');">
+            <div class="animal-category">AIR LAUT</div>
+        </div>
+        <div class="animal-content">
+            <h3 class="animal-name">Hiu Karang Sirip Hitam</h3>
+            <p class="animal-latin">Carcharhinus melanopterus</p>
+            <p class="animal-description">Hiu air laut yang hidup di perairan dangkal terumbu karang tropis. Mudah dikenali dari ujung sirip yang berwarna hitam kontras.</p>
+            <div class="animal-facts">
+                <span class="fact-item">📏 100-180cm</span>
+                <span class="fact-item">⚖️ 13-28kg</span>
+                <span class="fact-item">🏠 Terumbu Karang</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Yellowtail Damselfish -->
+    <div class="animal-card" data-category="ikan">
+        <div class="animal-image" style="background-image: url('ikan/yellowtail\ damselfis.jpg');">
+            <div class="animal-category">AIR LAUT</div>
+        </div>
+        <div class="animal-content">
+            <h3 class="animal-name">Yellowtail Damselfish</h3>
+            <p class="animal-latin">Microspathodon chrysurus</p>
+            <p class="animal-description">Ikan air laut kecil yang hidup di terumbu karang Atlantik. Sangat teritorial dan agresif meskipun ukurannya kecil, terutama saat menjaga telur.</p>
+            <div class="animal-facts">
+                <span class="fact-item">📏 15-20cm</span>
+                <span class="fact-item">⚖️ 100-200g</span>
+                <span class="fact-item">🏠 Terumbu Karang</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spot Snapper -->
+    <div class="animal-card" data-category="ikan">
+        <div class="animal-image" style="background-image: url('ikan/spot\ snapper.jpg');">
+            <div class="animal-category">AIR LAUT</div>
+        </div>
+        <div class="animal-content">
+            <h3 class="animal-name">Spot Snapper</h3>
+            <p class="animal-latin">Lutjanus ehrenbergii</p>
+            <p class="animal-description">Ikan air laut dari keluarga kakap yang hidup di perairan tropis Indo-Pasifik. Memiliki bintik hitam khas di bagian belakang tubuh.</p>
+            <div class="animal-facts">
+                <span class="fact-item">📏 25-40cm</span>
+                <span class="fact-item">⚖️ 800-2000g</span>
+                <span class="fact-item">🏠 Perairan Tropis</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rockmover Wrasse -->
+    <div class="animal-card" data-category="ikan">
+        <div class="animal-image" style="background-image: url('ikan/rockmover\ wrasse.jpg');">
+            <div class="animal-category">AIR LAUT</div>
+        </div>
+        <div class="animal-content">
+            <h3 class="animal-name">Rockmover Wrasse</h3>
+            <p class="animal-latin">Novaculichthys taeniourus</p>
+            <p class="animal-description">Ikan air laut yang hidup di terumbu karang Indo-Pasifik. Terkenal karena kemampuannya memindahkan batu dan karang untuk mencari makanan.</p>
+            <div class="animal-facts">
+                <span class="fact-item">📏 20-30cm</span>
+                <span class="fact-item">⚖️ 300-600g</span>
+                <span class="fact-item">🏠 Terumbu Karang</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Butterfly Fish -->
+    <div class="animal-card" data-category="ikan">
+        <div class="animal-image" style="background-image: url('ikan/butterfly\ fish.jpg');">
+            <div class="animal-category">AIR LAUT</div>
+        </div>
+        <div class="animal-content">
+            <h3 class="animal-name">Butterfly Fish</h3>
+            <p class="animal-latin">Chaetodontidae</p>
+            <p class="animal-description">Ikan air laut berwarna cerah yang hidup di terumbu karang tropis. Memiliki mulut kecil yang cocok untuk memakan polip karang dan invertebrata kecil.</p>
+            <div class="animal-facts">
+                <span class="fact-item">📏 12-22cm</span>
+                <span class="fact-item">⚖️ 100-400g</span>
+                <span class="fact-item">🏠 Terumbu Karang</span>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>KBS</h3>
+                    <p>Kebun Binatang Modern di Kota Surabaya dengan koleksi lebih dari 300 spesies hewan unik dari berbagai belahan dunia.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p>📍 Jl. Setail No.1, Darmo, Kec. Wonokromo, Surabaya, Jawa Timur 60241</p>
+                    <p>📞 (031) 567-7678, (031) 567-7679</p>
+                    <p>✉️ humas_kbs@yahoo.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Jam Operasional</h3>
+                    <p>Jam Buka Umum: 08.00 - 16.00 WIB.<br>
+                    Animal Edutainment: Sab-Min dan tanggal merah (11.00 & 13.00 WIB).<br>
+                    Surabaya Night Zoo: 18.00 - 22.00 WIB.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Link Cepat</h3>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="satwa.html">Koleksi Satwa</a></li>
+                        <li><a href="index.html">Berita</a></li>
+                        <li><a href="GPS.html">Info Kunjungan</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kebun Binatang Surabaya. All rights reserved. | Created with ❤️ for wildlife conservation</p>
+            </div>
+        </div>
+    </footer>
+    <script src="satwa.js"></script>
+
+
+</body>
+</html>
